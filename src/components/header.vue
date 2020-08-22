@@ -26,14 +26,14 @@ export default {
 
     #header{
         width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(-120deg, rgb(197, 206, 255),rgb(255, 235, 255) );  
+        height: 50vh;
     }
 
     #header h1{
         font-family: "montserrat", sans-serif;
         font-size: 50px;
-        margin: 30vh 18%;
+        margin: 35vh 18%;
+        border-bottom: solid 2px rgb(93, 95, 110);
     }
 </style>
 

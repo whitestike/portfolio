@@ -1,17 +1,13 @@
 <template>
-    <form class="contact">
-    </form>
+  <div id="contact"></div>
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
 <style>
-
-    .contact{
-        height: 50vh;
-    }
+.contact {
+  height: 50vh;
+}
 </style>

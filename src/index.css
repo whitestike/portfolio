@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+.ant-layout-header{
+  background-color: #2B333A !important;
+  border-bottom: solid 2px #F06543;
+  height: 75px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu{
+  display: flex;
+  align-items: center !important;
+  height: 100%;
+  background-color: rgba(252, 252, 252, 0) !important;
+}
+
+.ant-menu-item{
+  height: 100% !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 25px !important;
+}
+
+.ant-menu-item-active{
+  text-decoration: underline;
+  background-color: #878d92 !important;
+}
+
+h1{
+  font-family: "Lato" !important;
+  color: #E8E9EB !important;
+  
+}

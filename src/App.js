@@ -1,6 +1,7 @@
 import 'antd/dist/antd.css'; 
 
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Avatar} from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
 const { Header, Content } = Layout;
 
@@ -14,7 +15,17 @@ function App() {
           <Menu.Item><h1>projects</h1></Menu.Item>
         </Menu>
       </Header>
-      <Content style={{ padding: '0 50px' }}>
+      <Content className='main'>
+        <div className='hero'>
+          <div>
+            <h1 className='title'>Hi.</h1>
+            <h1 className='title'>Im Rickert Goyvaerts</h1>
+            <h2>web-dev, web-design, ...</h2>
+          </div>
+          <div className='img'>
+            <Avatar shape="square" size={300} icon={<UserOutlined />} />
+          </div>
+        </div>
       </Content>
     </Layout>
   );

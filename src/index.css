@@ -29,8 +29,36 @@
   background-color: #878d92 !important;
 }
 
-h1{
+h1, h2{
   font-family: "Lato" !important;
   color: #E8E9EB !important;
   
+}
+
+h2{
+  font-size: 40px;
+  border-bottom: solid 2px #F06543;
+  width: 30%;
+  margin: 0 0 100px 40px !important;
+}
+
+.hero{
+  padding: 75px 0 10px 0;
+  background-color: #2B333A;
+  position: relative;
+}
+
+.img{
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.title{
+  padding: 0 40px;
+  font-size: 64px;
+}
+
+.main{
+  height: 100%;
 }

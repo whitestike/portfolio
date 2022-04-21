@@ -27,6 +27,9 @@ function App() {
           </div>
         </div>
       </Content>
+      <Content>
+         
+      </Content>
     </Layout>
   );
 }

@@ -42,6 +42,13 @@ h2{
   margin: 0 0 100px 40px !important;
 }
 
+h3{
+  font-size: 35px;
+  color: #E8E9EB !important;
+  border-bottom: solid 2px #F06543;
+  width: 30%;
+}
+
 .hero{
   padding: 75px 0 10px 0;
   background-color: #2B333A;
@@ -59,6 +66,37 @@ h2{
   font-size: 64px;
 }
 
+.title--content{
+  color: #F06543 !important;
+  font-size: 75px;
+  text-align: center;
+}
+
+.title--table{
+  font-weight: normal;
+  width: 15%;
+  margin: 10px 0 0 20px;
+}
+
 .main{
   height: 100%;
+}
+
+.about-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flyout--Table{
+  background-color: #2B333A;
+  border-top: solid #F06543 2px;
+  width: 80vw;
+  margin: 0 0 40px 0;
+}
+
+li{
+  list-style: none;
+  color: #E8E9EB;
 }

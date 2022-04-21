@@ -27,8 +27,26 @@ function App() {
           </div>
         </div>
       </Content>
-      <Content>
-         
+      <Content className='about-me'>
+        <h1 className='title--content'>about me</h1>
+        <div className='flyout--Table'>
+          <h3 className='title--table'>title</h3>
+          <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+          </ul>
+        </div>
+        <div className='flyout--Table'>
+        <h3  className='title--table'>title</h3>
+          <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+          </ul>
+        </div>
       </Content>
     </Layout>
   );

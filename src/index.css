@@ -75,7 +75,7 @@ h3{
 .title--table{
   font-weight: normal;
   width: 15%;
-  margin: 10px 0 0 20px;
+  margin: 10px 0 10px 20px;
 }
 
 .main{
@@ -93,10 +93,22 @@ h3{
   background-color: #2B333A;
   border-top: solid #F06543 2px;
   width: 80vw;
+  position: relative;
   margin: 0 0 40px 0;
 }
 
 li{
   list-style: none;
   color: #E8E9EB;
+}
+
+.button-arrow{
+  position: absolute;
+  height: 40px;
+  right: 1.5%;
+  top: 25%;
+}
+
+.folded{
+  display: none;
 }

@@ -10,11 +10,28 @@ const { Header, Content } = Layout;
 
 class App extends react.Component{
 
-  fold(){
-    
+  constructor(props){
+    this.state = {fold: false};
+  }
+
+  ToggleFold(){
+    var {fold} = this.state;
+
+    console.log(fold);
+
+    this.setState({fold: !fold});
+  }
+  
+  componentDidMount() {
+  }
+
+  componentWillUnmount() {
   }
 
   render(){
+
+    const {fold} = this.state;
+    
     return (
       <Layout className="layout">
         <Header>
@@ -38,15 +55,23 @@ class App extends react.Component{
         </Content>
         <Content className='about-me'>
           <h1 className='title--content'>about me</h1>
-          <div className='flyout--Table'>
+          <div onClick={this.ToggleFold} className='flyout--Table'>
             <h3 className='title--table'>title</h3>
-            <ul className='folded'>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-            </ul>
-            <a onClick={this.fold}><img className='button-arrow' src='arrow-down.png'/></a>
+
+            {this.fold
+              ? (<ul className='folded'>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+              </ul>)
+              : (<ul>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+              </ul>)
+            }
           </div>
           <div className='flyout--Table'>
           <h3 className='title--table'>title</h3>

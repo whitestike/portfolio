@@ -9,6 +9,16 @@
   justify-content: space-between;
 }
 
+.ant-layout-footer{
+  background-color: #2B333A !important;
+  border-top: solid 2px #F06543;
+  height: 75px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #E8E9EB !important;
+}
+
 .menu{
   display: flex;
   align-items: center !important;
@@ -58,7 +68,7 @@ h3{
 .img{
   position: absolute;
   right: 30px;
-  bottom: 30px;
+  top: 15px;
 }
 
 .title{
@@ -119,6 +129,9 @@ li{
 
 .text-large{
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .education-container{
@@ -138,4 +151,9 @@ li{
 ul{
   padding: 0;
   margin: 0 0 0 20px;
+}
+
+.icon{
+  padding: 0 10px 0 0;
+  height: 20px;
 }

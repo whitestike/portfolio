@@ -7,7 +7,14 @@ import FlyoutTable from "./components/flyoutTable";
 import { Layout, Menu, Avatar} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
-const { Header, Content } = Layout;
+import Pdf from './pdf/Rickert_CV_ENG.pdf';
+import Cake from './images/cake.svg';
+import Mail from './images/mail.svg';
+import Phone from './images/phone.svg';
+import Name from './images/name.svg';
+
+
+const { Header, Content, Footer} = Layout;
 
 
 class App extends react.Component{
@@ -19,7 +26,7 @@ class App extends react.Component{
         <Header>
           <h1>Rickert Goyvaerts</h1>
           <Menu className='menu' theme="dark">
-            <Menu.Item><h1>CV</h1></Menu.Item>
+            <Menu.Item><a  href = {Pdf} target = "_blank"><h1>CV</h1></a></Menu.Item>
             <Menu.Item><h1>projects</h1></Menu.Item>
           </Menu>
         </Header>
@@ -39,9 +46,10 @@ class App extends react.Component{
           <h1 className='title--content'>about me</h1>
           <FlyoutTable title="Personal" table={
             <ul>
-              <li className='text-large'>Name: Rickert Goyvaerts</li>
-              <li className='text-large'>Email: Rickert.Goyvaerts@gmail.com</li>
-              <li className='text-large'>phone: 04 72815156</li>
+              <li className='text-large'><img className='icon' src={Name}/> Rickert Goyvaerts</li>
+              <li className='text-large'><img className='icon' src={Mail}/> Rickert.Goyvaerts@gmail.com</li>
+              <li className='text-large'><img className='icon' src={Phone}/> +32 4 72815156</li>
+              <li className='text-large'><img className='icon' src={Cake}/> 04/12/2000</li>
             </ul>}/>
           <FlyoutTable title="Education" table={
             <ul>
@@ -62,6 +70,8 @@ class App extends react.Component{
               </div>
             </ul>}/>
         </Content>
+        <Footer>
+        </Footer>
       </Layout>
     );
   }

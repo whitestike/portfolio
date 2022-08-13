@@ -11,8 +11,8 @@ const Head = () =>{
         <Header>
             <h1>Rickert Goyvaerts</h1>
             <Menu className='menu' theme="dark">
-                <Menu.Item><a  href = {Pdf} target = "_blank"><h1>CV</h1></a></Menu.Item>
-                <Menu.Item><h1>projects</h1></Menu.Item>
+                <Menu.Item><a  href={Pdf} target = "_blank"><h1>CV</h1></a></Menu.Item>
+                <Menu.Item><a href="#projects"><h1>projects</h1></a></Menu.Item>
             </Menu>
         </Header>
     );

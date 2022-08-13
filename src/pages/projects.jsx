@@ -12,7 +12,7 @@ const { Content } = Layout;
 
 const Projects = () =>{
     return(
-        <Content className="projects">
+        <Content className="projects" id="projects">
             <h1 className='title--content'>projects</h1>
             
             <div>

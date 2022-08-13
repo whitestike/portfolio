@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ant-layout-header{
   background-color: #2B333A !important;
   border-bottom: solid 2px #F06543;

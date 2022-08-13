@@ -157,3 +157,73 @@ ul{
   padding: 0 10px 0 0;
   height: 20px;
 }
+
+.projects{
+  display:  flex;
+  flex-direction: column;
+  align-items:  center;
+  justify-content: center;
+  margin: 200px 0;
+}
+
+.container--card{
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container--card > .ant-card{
+  margin: 0 50px;
+  height: 25vh;
+}
+
+.Card{
+  border-bottom: solid 2px #F06543;
+  background-color: #2B333A;
+  color: #E8E9EB;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Card > img{
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Card > h3{
+  width: 90%;
+}
+
+.Card:hover{
+  box-shadow: 0px 16px 15px 0px rgba(0,0,0,0.66);
+}
+
+.ant-modal{
+  width: 70vw !important;
+}
+
+.ant-modal-body > img{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.text--content{
+  width: 90%;
+}
+
+.modal--text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  font-size: 24px;
+}

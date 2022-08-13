@@ -9,7 +9,7 @@ import { UserOutlined } from '@ant-design/icons';
 
 import FlyoutTable from "../components/flyoutTable";
 
-import { Avatar, Layout } from 'antd';
+import { Avatar, Layout, Progress } from 'antd';
 
 const { Content} = Layout;
 
@@ -54,6 +54,39 @@ const Home = () =>{
                     <li className='text-small outline-right'>Hoboken</li>
                     <li className='text-small'>sep 2019 - now</li>
                 </div>
+                </ul>}/>
+                <FlyoutTable title="Skills" table={
+                <ul>
+                    <li className='text-large'>html/css/scss</li>
+                    <Progress percent={85} showInfo={false} strokeColor={{
+                        '0%': '#F06543',
+                        '100%': '#F06543',
+                    }}/>
+                    <li className='text-large'>vue</li>
+                    <Progress percent={30} showInfo={false}strokeColor={{
+                        '0%': '#F06543',
+                        '100%': '#F06543',
+                    }}/>
+                    <li className='text-large'>js</li>
+                    <Progress percent={80} showInfo={false}strokeColor={{
+                        '0%': '#F06543',
+                        '100%': '#F06543',
+                    }}/>
+                    <li className='text-large'>PHP</li>
+                    <Progress percent={60} showInfo={false}strokeColor={{
+                        '0%': '#F06543',
+                        '100%': '#F06543',
+                    }}/>
+                    <li className='text-large'>react</li>
+                    <Progress percent={70} showInfo={false}strokeColor={{
+                        '0%': '#F06543',
+                        '100%': '#F06543',
+                    }}/>
+                    <li className='text-large'>python</li>
+                    <Progress percent={75} showInfo={false}strokeColor={{
+                        '0%': '#F06543',
+                        '100%': '#F06543',
+                    }}/>
                 </ul>}/>
             </Content>
         </div>

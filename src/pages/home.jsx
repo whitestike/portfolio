@@ -4,6 +4,7 @@ import Cake from '../images/cake.svg';
 import Mail from '../images/mail.svg';
 import Phone from '../images/phone.svg';
 import Name from '../images/name.svg';
+import Self from '../images/self.jpg';
 
 import { UserOutlined } from '@ant-design/icons';
 
@@ -19,12 +20,12 @@ const Home = () =>{
             <Content className='main'>
             <div className='hero'>
                 <div>
-                <h1 className='title'>Hi,</h1>
-                <h1 className='title'>I`m Rickert Goyvaerts.</h1>
-                <h2>web-dev, web-design, ...</h2>
+                    <h1 className='title'>Hi,</h1>
+                    <h1 className='title'>I`m Rickert Goyvaerts.</h1>
+                    <h2>web-dev, web-design, ...</h2>
                 </div>
-                <div className='img'>
-                <Avatar shape="square" size={300} icon={<UserOutlined />} />
+                <div className='avatar'>
+                    <img src={Self} />
                 </div>
             </div>
             </Content>
